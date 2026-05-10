@@ -1,0 +1,23 @@
+# Raw dataset files
+data/raw/*.csv
+data/raw/*.zip
+data/raw/*.rar
+
+# Processed exports
+data/processed/*.csv
+data/processed/*.xlsx
+
+# Power BI temp files
+*.tmp
+*.bak
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python cache, if used later
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
