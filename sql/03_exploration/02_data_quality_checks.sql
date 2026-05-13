@@ -145,7 +145,7 @@ LEFT JOIN sellers s
     ON oi.seller_id = s.seller_id
 WHERE s.seller_id IS NULL;
 
--- Improved missing date check to catch blank strings or zero-date placeholders\
+-- Improved missing date check to catch blank strings or zero-date placeholders
 
 SELECT
     COUNT(*) AS total_orders,
