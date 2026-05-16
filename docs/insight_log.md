@@ -35,7 +35,6 @@ Revenue analysis can still include these rows because price and freight values e
 Recommendation:
 Use LEFT JOIN instead of INNER JOIN when joining order_items to products. Label missing categories as "unknown" using COALESCE so revenue is not accidentally excluded from analysis.
 
-# Insight Log
 
 ## Order Funnel Analysis
 - 97.02% of orders completed successfully
@@ -85,3 +84,19 @@ The marketplace is broadly acquisition-driven, but some categories appear more c
 
 Recommendation:
 Use higher-repeat categories for targeted retention experiments, remarketing campaigns, bundle recommendations, loyalty offers, and post-purchase email/push journeys.
+
+## Review and Customer Satisfaction Analysis
+
+- Overall review sentiment is positive, with 57.78% of reviews rated 5-star and 19.29% rated 4-star.
+- However, 11.51% of reviews are 1-star, creating a clear dissatisfaction segment that requires investigation.
+- Review scores decline as delivery time increases: 0–7 day deliveries average 4.41, 8–14 days average 4.29, 15–21 days average 4.10, and 22+ days fall sharply to 3.01.
+- Late deliveries have a major negative impact on satisfaction: 46.15% of late-delivery reviews are 1-star, compared with only 8.60% for on-time deliveries.
+- On-time deliveries strongly support positive experience, with 60.77% receiving 5-star reviews.
+- Office furniture is the lowest-rated high-volume category, with an average review score of 3.49.
+- Other lower-rated high-volume categories include unknown, bed/bath/table, furniture/decor, computers/accessories, and telephony.
+
+Business meaning:
+Delivery reliability is strongly connected to customer satisfaction. Product and operations teams should prioritise late-delivery reduction, especially for categories and sellers with high volume and lower review performance.
+
+Recommendation:
+Build monitoring for late-delivery risk, investigate low-rated high-volume categories, and prioritise operational improvements for categories where poor satisfaction may affect repeat purchase and marketplace trust.
