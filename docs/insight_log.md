@@ -59,3 +59,29 @@ Use LEFT JOIN instead of INNER JOIN when joining order_items to products. Label 
 - Credit card is the dominant payment method, accounting for approximately 12.54M in payment value across 76,795 payment records.
 - Payment totals are highly consistent with item + freight totals, with only a 2,870.39 total difference across 98,665 matched orders, averaging around 0.03 difference per order. This validates payment data reliability for revenue analysis.
 - High-revenue categories generally maintain strong review scores. Health & beauty had an average review score of 4.14, while watches/gifts had 4.02 and bed/bath/table had 3.90.
+
+## Customer Retention and Cohort Analysis
+
+- 96.88% of unique customers purchased only once, while only 3.12% made repeat purchases.
+- Most repeat customers placed only two orders; higher-frequency customers were rare.
+- Monthly customer acquisition increased strongly from 2017 onwards and remained high through most of 2018.
+- Returning customer contribution improved gradually over time, reaching around 2.5–3.1% of active monthly customers in mid-2018, but the marketplace remained heavily acquisition-driven.
+- Monthly cohort analysis showed very low repeat purchase behaviour. Most meaningful cohorts had Month 1 retention below 1%, with Month 2–6 retention generally below 0.5%.
+- Small or incomplete cohorts, such as 2016-09, 2016-12, 2018-09, and 2018-10, should not be over-interpreted due to low customer counts or incomplete dataset coverage.
+
+### Product categories associated with repeat customers
+
+Although overall repeat purchase behaviour is weak, some product categories show stronger relative repeat-customer behaviour.
+
+Findings:
+- Home appliances had the highest repeat customer rate at 10.95%.
+- Fashion bags/accessories followed at 9.12%.
+- Furniture/decor reached 7.36%.
+- Bed/bath/table reached 6.58%.
+- Most other categories were between roughly 3% and 5%.
+
+Business meaning:
+The marketplace is broadly acquisition-driven, but some categories appear more capable of bringing customers back. These categories may have stronger replenishment, household need, lifestyle, or cross-sell potential.
+
+Recommendation:
+Use higher-repeat categories for targeted retention experiments, remarketing campaigns, bundle recommendations, loyalty offers, and post-purchase email/push journeys.
